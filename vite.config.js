@@ -5,5 +5,5 @@ import svgr from "vite-plugin-svgr";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "breathing-better",
+  base: "https://github.com/NikitaEfimovIT/breathing-better",
 });
