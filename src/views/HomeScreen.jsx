@@ -12,10 +12,11 @@ const ContainerRow = styled("div")(({ theme }) => ({
   padding: 0,
   marginLeft: "1em",
   marginRight: "1em",
-  [theme.breakpoints.down(1200)]: {
+  [theme.breakpoints.down("md")]: {
     marginTop: "90px",
     textAlign: "center",
-    justifyContent: "start",
+    justifyContent: "center",
+    alignItems: "center",
     flexDirection: "column",
   },
 }));
@@ -23,9 +24,9 @@ const ContainerRow = styled("div")(({ theme }) => ({
 const BoxColumn = styled(Box)(({ theme }) => ({
   display: "flex",
   height: "100%",
-  maxWidth: theme.breakpoints.down(1200) ? "88%" : "55%",
+  maxWidth: theme.breakpoints.down(1200) ? "100%" : "55%",
   justifyContent: "center",
-  alignItems: theme.breakpoints.down(1200) ? "center" : "start",
+  alignItems: "start",
   flexDirection: "column",
 }));
 
@@ -52,14 +53,14 @@ export const HomeScreen = () => {
   return (
     <ContainerRow>
       {isMdDown ? (
-        <BoxColumn>
-          <TitleBig>BreatheBetter: Easy Breathing Techniques for Everything</TitleBig>
+        <BoxColumn sx={{ alignItems: "center", textAlign: "center" }}>
+          <TitleBig sx={{ width: "88%" }}>BreatheBetter: Easy Breathing Techniques for Everything</TitleBig>
           <img
             alt={"breathing exercises relax you"}
             src={HomeScreenImage}
             style={{ objectFit: "cover", minWidth: 400, height: 500 }}
           />
-          <div>
+          <div style={{ width: "88%" }}>
             <Text>
               Feeling stressed before an exam? Overthinking everything? Your breath might be the secret weapon you’re
               missing! Our app can help you to use it in proper way!
