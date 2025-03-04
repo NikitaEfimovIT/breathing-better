@@ -1,5 +1,7 @@
 import { Box, Button, Container, SvgIcon, useMediaQuery, useTheme } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-scroll";
+
 export const Header = () => {
   const isMdDown = useMediaQuery((theme) => theme.breakpoints.down(1200));
   const theme = useTheme();
@@ -41,10 +43,27 @@ export const Header = () => {
             justifyContent={"space-between"}
             width={"50%"}
           >
-            <h1 style={{ color: theme.palette.primary.main }}>BreatheBetter</h1>
-            <Button>Why breathing?</Button>
-            <Button>Our app</Button>
-            <Button>About us</Button>
+            <h1 style={{ color: theme.palette.primary.main }}>
+              <Link to="section1" smooth={true} duration={500}>
+                BreatheBetter
+              </Link>
+            </h1>
+            <Button>
+              <Link to="section2" smooth={true} duration={500}>
+                Why breathing?
+              </Link>
+            </Button>
+            <Button>
+              <Link to="section3" smooth={true} duration={500}>
+                Our app
+              </Link>
+            </Button>
+            <Button>
+              {" "}
+              <Link to="section4" smooth={true} duration={500}>
+                About us
+              </Link>
+            </Button>
           </Box>
           <Button variant={"contained"} style={{ height: "47px", width: "150px", borderRadius: 15, fontSize: "17px" }}>
             Try it now
