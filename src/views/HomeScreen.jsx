@@ -13,9 +13,8 @@ const ContainerRow = styled("div")(({ theme }) => ({
   marginLeft: "1em",
   marginRight: "1em",
   [theme.breakpoints.down("md")]: {
-    marginTop: "90px",
     textAlign: "center",
-    justifyContent: "center",
+    justifyContent: "space-between",
     alignItems: "center",
     flexDirection: "column",
   },
@@ -23,7 +22,7 @@ const ContainerRow = styled("div")(({ theme }) => ({
 
 const BoxColumn = styled(Box)(({ theme }) => ({
   display: "flex",
-  height: "100%",
+  height: "auto",
   maxWidth: theme.breakpoints.down(1200) ? "100%" : "55%",
   justifyContent: "center",
   alignItems: "start",
@@ -53,7 +52,7 @@ export const HomeScreen = () => {
   return (
     <ContainerRow>
       {isMdDown ? (
-        <BoxColumn sx={{ alignItems: "center", textAlign: "center" }}>
+        <BoxColumn sx={{ alignItems: "center", textAlign: "center", justifyContent: "space-between" }}>
           <TitleBig sx={{ width: "88%" }}>BreatheBetter: Easy Breathing Techniques for Everything</TitleBig>
           <img
             alt={"breathing exercises relax you"}
@@ -62,8 +61,8 @@ export const HomeScreen = () => {
           />
           <div style={{ width: "88%" }}>
             <Text>
-              Feeling stressed before an exam? Overthinking everything? Your breath might be the secret weapon you’re
-              missing! Our app can help you to use it in proper way!
+              Feeling <b>stressed</b> before an exam? <b>Overthinking</b> everything? Your breath might be the secret
+              weapon you’re missing! Our app can help you to use it in proper way!
             </Text>
           </div>
           <Button style={{ height: "70px", width: "284px", borderRadius: 15, fontSize: "18px" }} variant={"contained"}>
@@ -76,8 +75,8 @@ export const HomeScreen = () => {
             <TitleBig>BreatheBetter: Easy Breathing Techniques for Everything</TitleBig>
             <div style={{ width: "80%" }}>
               <Text>
-                Feeling stressed before an exam? Overthinking everything? Your breath might be the secret weapon you’re
-                missing! Our app can help you to use it in proper way!
+                Feeling <b>stressed</b> before an exam? <b>Overthinking</b> everything? Your breath might be the secret
+                weapon you’re missing! Our app can help you to use it in proper way!
               </Text>
             </div>
             <Button

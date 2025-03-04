@@ -20,6 +20,7 @@ export const WhyBreathingScreen = () => {
         minHeight: "100vh",
         textAlign: isMdDown ? "center" : "start",
         flexShrink: 0,
+        marginTop: "10em",
       }}
     >
       <TitleH1>Why breathing is your choice?</TitleH1>
@@ -28,7 +29,7 @@ export const WhyBreathingScreen = () => {
         spacing={5}
         flexDirection={isMdDown ? "column" : "row"}
         justifyContent={"center"}
-        alignItems={"center"}
+        alignItems={"start"}
         maxWidth="100%"
         flexWrap="wrap"
       >

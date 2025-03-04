@@ -1,5 +1,4 @@
-import { Box, Button, Container, SvgIcon, useMediaQuery, useTheme } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
+import { Box, Button, useMediaQuery, useTheme } from "@mui/material";
 import { Link } from "react-scroll";
 
 export const Header = () => {
@@ -8,7 +7,7 @@ export const Header = () => {
   return (
     <header
       style={{
-        position: "fixed",
+        position: "sticky",
         width: "100%",
         zIndex: 100,
         top: 0,
@@ -43,7 +42,7 @@ export const Header = () => {
             justifyContent={"space-between"}
             width={"50%"}
           >
-            <h1 style={{ color: theme.palette.primary.main }}>
+            <h1 style={{ color: theme.palette.primary.main, cursor: "pointer" }}>
               <Link to="section1" smooth={true} duration={500}>
                 BreatheBetter
               </Link>
