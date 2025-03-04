@@ -27,7 +27,7 @@ export const AppFeature = (props) => {
   ) : (
     <Box
       display={"flex"}
-      justifyContent={"space-evenly"}
+      justifyContent={"space-between"}
       flexDirection={isInverse ? "row-reverse" : "row"}
       width={"100%"}
     >
