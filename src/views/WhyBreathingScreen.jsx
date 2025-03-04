@@ -20,7 +20,7 @@ export const WhyBreathingScreen = () => {
         minHeight: "100vh",
         textAlign: isMdDown ? "center" : "start",
         flexShrink: 0,
-        marginTop: "10em",
+        marginTop: "5em",
       }}
     >
       <TitleH1>Why breathing is your choice?</TitleH1>

@@ -18,7 +18,7 @@ export const OurAppScreen = () => {
         minHeight: "100vh",
         flexShrink: 0,
       }}
-      marginY={"10em"}
+      marginY={"5em"}
     >
       <TitleH1>Our app is your way to breathe better</TitleH1>
       <AppFeature

@@ -5,7 +5,17 @@ export const Footer = () => {
   const isMdDown = useMediaQuery((theme) => theme.breakpoints.down(1200));
   const isXsDown = useMediaQuery((theme) => theme.breakpoints.down(500));
   return (
-    <footer style={{ backgroundColor: "#1A4962", minHeight: 200, color: "white", position: "static" }}>
+    <footer
+      style={{
+        backgroundColor: "#1A4962",
+        minHeight: 200,
+        color: "white",
+        position: "static",
+        overflowX: "hidden",
+        display: "flow-root",
+        overflowClipMargin: "1rem",
+      }}
+    >
       <Box padding={"3em"}>
         <Box
           display={"flex"}

@@ -14,6 +14,9 @@ export const Header = () => {
         right: 0,
         left: 0,
         backgroundColor: "rgba(255, 255, 255)",
+        overflowX: "hidden",
+        display: "flow-root",
+        overflowClipMargin: "1rem",
       }}
     >
       {isMdDown ? (

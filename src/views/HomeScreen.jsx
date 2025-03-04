@@ -57,7 +57,7 @@ export const HomeScreen = () => {
           <img
             alt={"breathing exercises relax you"}
             src={HomeScreenImage}
-            style={{ objectFit: "cover", minWidth: 400, height: 500 }}
+            style={{ objectFit: "fill", maxWidth: 400, height: 500 }}
           />
           <div style={{ width: "88%" }}>
             <Text>

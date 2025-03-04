@@ -9,7 +9,7 @@ import { GetOurAppScreen } from "./views/GetOurAppScreen.jsx";
 import { Element } from "react-scroll";
 function App() {
   return (
-    <Container maxWidth={"xl"}>
+    <Container maxWidth={"xl"} style={{ overflowX: "hidden", display: "flow-root", overflowClipMargin: "1rem" }}>
       <Element name={"section1"}>
         <HomeScreen />
       </Element>
