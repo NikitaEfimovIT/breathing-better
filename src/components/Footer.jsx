@@ -61,9 +61,13 @@ export const Footer = () => {
           <Box display={"flex"} flexDirection={"column"} alignItems={"start"} justifyContent={"start"} color={"white"}>
             <TitleH3 sx={{ color: "white", marginBottom: 0 }}>Contacts:</TitleH3>
             <TitleH3 sx={{ color: "white", margin: 0 }}>Our email</TitleH3>
-            <Text sx={{ color: "white", marginTop: 0 }}>breathe.better@contact.com</Text>
+            <Text sx={{ color: "white", marginTop: 0 }}>
+              <a href="mailto:breathe.better@contact.com">breathe.better@contact.com</a>
+            </Text>
             <TitleH3 sx={{ color: "white", margin: 0 }}>Our phone</TitleH3>
-            <Text sx={{ color: "white", marginTop: 0 }}>+49 (1525) 107 41 84</Text>
+            <Text sx={{ color: "white", marginTop: 0 }}>
+              <a>+49 (1525) 107 41 84</a>
+            </Text>
             {isMdDown && (
               <Text style={{ margin: 0, lineHeight: "normal", fontSize: 14, color: "white" }}>
                 {`@BreathBetter ${new Date().getFullYear()}.`}
