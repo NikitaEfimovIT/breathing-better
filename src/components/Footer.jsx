@@ -62,7 +62,9 @@ export const Footer = () => {
             <TitleH3 sx={{ color: "white", marginBottom: 0 }}>Contacts:</TitleH3>
             <TitleH3 sx={{ color: "white", margin: 0 }}>Our email</TitleH3>
             <Text sx={{ color: "white", marginTop: 0 }}>
-              <a href="mailto:breathe.better@contact.com">breathe.better@contact.com</a>
+              <a href="mailto:breathe.better@contact.com" style={{ color: "white" }}>
+                breathe.better@contact.com
+              </a>
             </Text>
             <TitleH3 sx={{ color: "white", margin: 0 }}>Our phone</TitleH3>
             <Text sx={{ color: "white", marginTop: 0 }}>
